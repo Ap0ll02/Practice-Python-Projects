@@ -1,8 +1,16 @@
 # Practice Python Projects
 I am doing practice projects from the Impractical Python Projects book from No Starch Press, by Lee Vaughan. These are my attempts at problems and challenges.
 
+[![Pylint](https://github.com/Ap0ll02/Practice-Python-Projects/actions/workflows/pylint.yml/badge.svg)](https://github.com/Ap0ll02/Practice-Python-Projects/actions/workflows/pylint.yml)
+[![Pydocstyle](https://github.com/Ap0ll02/Practice-Python-Projects/actions/workflows/pydocstyle.yml/badge.svg)](https://github.com/Ap0ll02/Practice-Python-Projects/actions/workflows/pydocstyle.yml)
+
 # Installation and Running
 If you find yourself wanting to try any of these programs, simply running them as a basic python file works.
+Currently, the termcolor library is a dependency, which can be installed with:
+
+`pip install termcolor`
+
+Then you can run the python file as such:
 
 ```python name.py```
 
