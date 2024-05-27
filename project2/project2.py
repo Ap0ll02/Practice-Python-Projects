@@ -5,7 +5,6 @@ Author: Jack Ratermann
 Date: May 26, 2024
 """
 from termcolor import colored as cc
-# pylint: disable=no-member
 from project1 import load as ld
 
 
