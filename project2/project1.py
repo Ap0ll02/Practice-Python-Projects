@@ -15,7 +15,6 @@ def load(file):
     Parameters: file
     Returns: a list from the file
     """
-    # pylint: disable=no-member
     try:
         with open(file, encoding=locale.getpreferredencoding()) as in_file:
             loaded_text = in_file.read().strip().split('\n')
