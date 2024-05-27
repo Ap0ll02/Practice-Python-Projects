@@ -1,0 +1,24 @@
+"""
+Loading A Python File.
+
+Author: Jack Ratermann
+Date: May 26, 2024
+"""
+import sys
+
+
+def load(file):
+    """
+    Load a python file.
+
+    Parameters: file
+    Returns: a list from the file
+    """
+    try:
+        with open(file) as in_file:
+            loaded_text = in_file.read().strip().split('\n')
+            loaded_text = [x.lower() for x in loaded_text]
+            return loaded_text
+    except IOError as e_io:
+        print("{} Error Opening {}".format(e_io, file), file=sys.stderr)
+        sys.exit(1)
