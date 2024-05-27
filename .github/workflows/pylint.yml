@@ -21,4 +21,4 @@ jobs:
         pip install termcolor
     - name: Analysing the code with pylint
       run: |
-        pylint --disable=no-member $(git ls-files '*.py')
+        pylint --disable=no-member-in-module $(git ls-files '*.py')
