@@ -5,10 +5,10 @@ Author: Jack Ratermann
 Date: May 26, 2024
 """
 from termcolor import colored as cc
-import project1 as ld
+from project1 import load as ld
 
 
-word_list = ld.load("wordlist.txt")
+word_list = ld("wordlist.txt")
 pali_list = []
 for word in word_list:
     if len(word) > 1 and word == word[::-1]:
